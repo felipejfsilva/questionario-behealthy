@@ -1,0 +1,415 @@
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário de Diagnóstico do Perfil Comportamental</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Questionário de Diagnóstico do Perfil Comportamental</h1>
+    <p>Baseado no livro Decifre e Influencie Pessoas, na Metodologia CIS (DISC, Jung e Teoria de Valores) e no perfil
+      ideal para a função de Gerente do Instituto Be Healthy, este questionário foi desenvolvido para avaliar as
+      competências comportamentais das candidatas. O objetivo é identificar a adequação ao cargo, considerando
+      habilidades de liderança, organização, persuasão, resiliência, tomada de decisão e alinhamento com a cultura da
+      empresa.</p>
+
+    <form id="questionnaire-form">
+      <section>
+        <h2>I. DADOS PESSOAIS</h2>
+        <div class="form-group">
+          <label for="nome">1. Nome completo:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="idade">2. Idade:</label>
+          <input type="number" id="idade" name="idade" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required>
+        </div>
+        <div class="form-group">
+          <label for="formacao">3. Formação acadêmica:</label>
+          <input type="text" id="formacao" name="formacao" required>
+        </div>
+        <div class="form-group">
+          <label for="experiencia">4. Experiência profissional relevante para a função de gerente:</label>
+          <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="motivacao">5. O que a motivou a se candidatar a essa vaga?</label>
+          <textarea id="motivacao" name="motivacao" rows="4" required></textarea>
+        </div>
+      </section>
+
+      <section>
+        <h2>II. AUTOAVALIAÇÃO COMPORTAMENTAL (ESCALA DE 1 A 5)</h2>
+        <p>1 - Discordo totalmente | 2 - Discordo parcialmente | 3 - Neutro | 4 - Concordo parcialmente | 5 - Concordo
+          totalmente</p>
+
+        <h3>A. PERFIL DE LIDERANÇA</h3>
+        <div class="form-group">
+          <label for="lideranca6">6. Gosto de assumir a liderança e tomar decisões rápidas quando necessário.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="lideranca6" value="1" required> 1</label>
+            <label><input type="radio" name="lideranca6" value="2"> 2</label>
+            <label><input type="radio" name="lideranca6" value="3"> 3</label>
+            <label><input type="radio" name="lideranca6" value="4"> 4</label>
+            <label><input type="radio" name="lideranca6" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lideranca7">7. Me sinto confortável em delegar tarefas e acompanhar os resultados.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="lideranca7" value="1" required> 1</label>
+            <label><input type="radio" name="lideranca7" value="2"> 2</label>
+            <label><input type="radio" name="lideranca7" value="3"> 3</label>
+            <label><input type="radio" name="lideranca7" value="4"> 4</label>
+            <label><input type="radio" name="lideranca7" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lideranca8">8. Consigo motivar e influenciar positivamente as pessoas ao meu redor.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="lideranca8" value="1" required> 1</label>
+            <label><input type="radio" name="lideranca8" value="2"> 2</label>
+            <label><input type="radio" name="lideranca8" value="3"> 3</label>
+            <label><input type="radio" name="lideranca8" value="4"> 4</label>
+            <label><input type="radio" name="lideranca8" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lideranca9">9. Sei lidar com conflitos internos de forma equilibrada e estratégica.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="lideranca9" value="1" required> 1</label>
+            <label><input type="radio" name="lideranca9" value="2"> 2</label>
+            <label><input type="radio" name="lideranca9" value="3"> 3</label>
+            <label><input type="radio" name="lideranca9" value="4"> 4</label>
+            <label><input type="radio" name="lideranca9" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lideranca10">10. Sou uma pessoa assertiva e tenho facilidade em dar feedbacks diretos e
+            construtivos.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="lideranca10" value="1" required> 1</label>
+            <label><input type="radio" name="lideranca10" value="2"> 2</label>
+            <label><input type="radio" name="lideranca10" value="3"> 3</label>
+            <label><input type="radio" name="lideranca10" value="4"> 4</label>
+            <label><input type="radio" name="lideranca10" value="5"> 5</label>
+          </div>
+        </div>
+
+        <h3>B. PERFIL DE COMUNICAÇÃO</h3>
+        <div class="form-group">
+          <label for="comunicacao11">11. Sou comunicativa e consigo me expressar com clareza e objetividade.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="comunicacao11" value="1" required> 1</label>
+            <label><input type="radio" name="comunicacao11" value="2"> 2</label>
+            <label><input type="radio" name="comunicacao11" value="3"> 3</label>
+            <label><input type="radio" name="comunicacao11" value="4"> 4</label>
+            <label><input type="radio" name="comunicacao11" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comunicacao12">12. Tenho facilidade em adaptar minha comunicação de acordo com o perfil da pessoa
+            com quem estou interagindo.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="comunicacao12" value="1" required> 1</label>
+            <label><input type="radio" name="comunicacao12" value="2"> 2</label>
+            <label><input type="radio" name="comunicacao12" value="3"> 3</label>
+            <label><input type="radio" name="comunicacao12" value="4"> 4</label>
+            <label><input type="radio" name="comunicacao12" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comunicacao13">13. Sei ouvir ativamente e compreender as necessidades das pessoas antes de
+            responder.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="comunicacao13" value="1" required> 1</label>
+            <label><input type="radio" name="comunicacao13" value="2"> 2</label>
+            <label><input type="radio" name="comunicacao13" value="3"> 3</label>
+            <label><input type="radio" name="comunicacao13" value="4"> 4</label>
+            <label><input type="radio" name="comunicacao13" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comunicacao14">14. Sou persuasiva e consigo convencer as pessoas sobre minhas ideias e
+            propostas.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="comunicacao14" value="1" required> 1</label>
+            <label><input type="radio" name="comunicacao14" value="2"> 2</label>
+            <label><input type="radio" name="comunicacao14" value="3"> 3</label>
+            <label><input type="radio" name="comunicacao14" value="4"> 4</label>
+            <label><input type="radio" name="comunicacao14" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comunicacao15">15. Me sinto confortável falando em público e conduzindo reuniões.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="comunicacao15" value="1" required> 1</label>
+            <label><input type="radio" name="comunicacao15" value="2"> 2</label>
+            <label><input type="radio" name="comunicacao15" value="3"> 3</label>
+            <label><input type="radio" name="comunicacao15" value="4"> 4</label>
+            <label><input type="radio" name="comunicacao15" value="5"> 5</label>
+          </div>
+        </div>
+
+        <h3>C. PERFIL DE TOMADA DE DECISÃO E RESOLUÇÃO DE PROBLEMAS</h3>
+        <div class="form-group">
+          <label for="decisao16">16. Tomo decisões rapidamente mesmo sob pressão.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="decisao16" value="1" required> 1</label>
+            <label><input type="radio" name="decisao16" value="2"> 2</label>
+            <label><input type="radio" name="decisao16" value="3"> 3</label>
+            <label><input type="radio" name="decisao16" value="4"> 4</label>
+            <label><input type="radio" name="decisao16" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="decisao17">17. Prefiro analisar os fatos e estruturar um plano antes de agir.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="decisao17" value="1" required> 1</label>
+            <label><input type="radio" name="decisao17" value="2"> 2</label>
+            <label><input type="radio" name="decisao17" value="3"> 3</label>
+            <label><input type="radio" name="decisao17" value="4"> 4</label>
+            <label><input type="radio" name="decisao17" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="decisao18">18. Quando enfrento um problema, sou capaz de buscar soluções criativas e
+            eficazes.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="decisao18" value="1" required> 1</label>
+            <label><input type="radio" name="decisao18" value="2"> 2</label>
+            <label><input type="radio" name="decisao18" value="3"> 3</label>
+            <label><input type="radio" name="decisao18" value="4"> 4</label>
+            <label><input type="radio" name="decisao18" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="decisao19">19. Sou resiliente e mantenho a calma diante de situações adversas.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="decisao19" value="1" required> 1</label>
+            <label><input type="radio" name="decisao19" value="2"> 2</label>
+            <label><input type="radio" name="decisao19" value="3"> 3</label>
+            <label><input type="radio" name="decisao19" value="4"> 4</label>
+            <label><input type="radio" name="decisao19" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="decisao20">20. Consigo equilibrar riscos e oportunidades ao tomar decisões estratégicas.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="decisao20" value="1" required> 1</label>
+            <label><input type="radio" name="decisao20" value="2"> 2</label>
+            <label><input type="radio" name="decisao20" value="3"> 3</label>
+            <label><input type="radio" name="decisao20" value="4"> 4</label>
+            <label><input type="radio" name="decisao20" value="5"> 5</label>
+          </div>
+        </div>
+
+        <h3>D. PERFIL ORGANIZACIONAL</h3>
+        <div class="form-group">
+          <label for="organizacional21">21. Tenho facilidade para gerenciar múltiplas tarefas e definir prioridades.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="organizacional21" value="1" required> 1</label>
+            <label><input type="radio" name="organizacional21" value="2"> 2</label>
+            <label><input type="radio" name="organizacional21" value="3"> 3</label>
+            <label><input type="radio" name="organizacional21" value="4"> 4</label>
+            <label><input type="radio" name="organizacional21" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="organizacional22">22. Gosto de seguir processos e regras para manter a organização no ambiente de
+            trabalho.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="organizacional22" value="1" required> 1</label>
+            <label><input type="radio" name="organizacional22" value="2"> 2</label>
+            <label><input type="radio" name="organizacional22" value="3"> 3</label>
+            <label><input type="radio" name="organizacional22" value="4"> 4</label>
+            <label><input type="radio" name="organizacional22" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="organizacional23">23. Prefiro ambientes estruturados e bem organizados.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="organizacional23" value="1" required> 1</label>
+            <label><input type="radio" name="organizacional23" value="2"> 2</label>
+            <label><input type="radio" name="organizacional23" value="3"> 3</label>
+            <label><input type="radio" name="organizacional23" value="4"> 4</label>
+            <label><input type="radio" name="organizacional23" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="organizacional24">24. Me adapto facilmente a mudanças e novas demandas.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="organizacional24" value="1" required> 1</label>
+            <label><input type="radio" name="organizacional24" value="2"> 2</label>
+            <label><input type="radio" name="organizacional24" value="3"> 3</label>
+            <label><input type="radio" name="organizacional24" value="4"> 4</label>
+            <label><input type="radio" name="organizacional24" value="5"> 5</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="organizacional25">25. Tenho disciplina para manter a equipe alinhada com os objetivos estratégicos
+            da empresa.</label>
+          <div class="rating-scale">
+            <label><input type="radio" name="organizacional25" value="1" required> 1</label>
+            <label><input type="radio" name="organizacional25" value="2"> 2</label>
+            <label><input type="radio" name="organizacional25" value="3"> 3</label>
+            <label><input type="radio" name="organizacional25" value="4"> 4</label>
+            <label><input type="radio" name="organizacional25" value="5"> 5</label>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>III. SITUAÇÕES PRÁTICAS (RESPOSTAS ABERTAS)</h2>
+        <div class="form-group">
+          <label for="situacao26">26. Conte um momento em que precisou tomar uma decisão difícil no trabalho e como
+            lidou com a situação.</label>
+          <textarea id="situacao26" name="situacao26" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="situacao27">27. Descreva um conflito que precisou gerenciar dentro de uma equipe. Qual foi sua
+            abordagem?</label>
+          <textarea id="situacao27" name="situacao27" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="situacao28">28. Como você lida com um colaborador que não está atingindo suas metas?</label>
+          <textarea id="situacao28" name="situacao28" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="situacao29">29. Como você organiza seu tempo e suas prioridades no dia a dia?</label>
+          <textarea id="situacao29" name="situacao29" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="situacao30">30. Qual sua estratégia para lidar com um cliente insatisfeito?</label>
+          <textarea id="situacao30" name="situacao30" rows="4" required></textarea>
+        </div>
+      </section>
+
+      <section>
+        <h2>IV. PERFIL MOTIVACIONAL (ESCOLHA A OPÇÃO QUE MAIS TE REPRESENTA)</h2>
+        <div class="form-group">
+          <label>31. O que mais te motiva profissionalmente?</label>
+          <label><input type="radio" name="motivacao31" value="A" required> (A) Ter autonomia e poder de decisão.</label>
+          <label><input type="radio" name="motivacao31" value="B"> (B) Ser reconhecida pelo meu desempenho.</label>
+          <label><input type="radio" name="motivacao31" value="C"> (C) Trabalhar em um ambiente harmônico e
+            equilibrado.</label>
+          <label><input type="radio" name="motivacao31" value="D"> (D) Ter um trabalho que envolva desafios
+            intelectuais e aprendizado contínuo.</label>
+        </div>
+
+        <div class="form-group">
+          <label>32. Em um projeto importante, como você prefere trabalhar?</label>
+          <label><input type="radio" name="motivacao32" value="A" required> (A) No comando, definindo as direções e
+            distribuindo tarefas.</label>
+          <label><input type="radio" name="motivacao32" value="B"> (B) Liderando, mas em colaboração com a equipe,
+            garantindo que todos participem.</label>
+          <label><input type="radio" name="motivacao32" value="C"> (C) Em grupo, focando em manter um bom
+            relacionamento entre os envolvidos.</label>
+          <label><input type="radio" name="motivacao32" value="D"> (D) De forma mais analítica, estruturando o projeto
+            antes de executá-lo.</label>
+        </div>
+
+        <div class="form-group">
+          <label>33. Quando recebe uma tarefa nova e desafiadora, sua primeira reação é:</label>
+          <label><input type="radio" name="motivacao33" value="A" required> (A) Tomar a frente e resolver da forma mais
+            rápida possível.</label>
+          <label><input type="radio" name="motivacao33" value="B"> (B) Buscar orientação e alinhar expectativas antes de
+            agir.</label>
+          <label><input type="radio" name="motivacao33" value="C"> (C) Consultar a equipe e entender a melhor forma de
+            executar.</label>
+          <label><input type="radio" name="motivacao33" value="D"> (D) Analisar os detalhes e estruturar um plano antes
+            de começar.</label>
+        </div>
+
+        <div class="form-group">
+          <label>34. Como você reage diante de mudanças inesperadas no trabalho?</label>
+          <label><input type="radio" name="motivacao34" value="A" required> (A) Se adapta rapidamente e toma decisões
+            para manter o controle da situação.</label>
+          <label><input type="radio" name="motivacao34" value="B"> (B) Procura entender os impactos antes de agir.</label>
+          <label><input type="radio" name="motivacao34" value="C"> (C) Pensa primeiro na equipe e na melhor forma de
+            gerenciar a transição.</label>
+          <label><input type="radio" name="motivacao34" value="D"> (D) Analisa os detalhes e possíveis riscos antes de
+            seguir adiante.</label>
+        </div>
+      </section>
+
+      <section>
+        <h2>V. PERFIL DISC (ESCOLHA A OPÇÃO QUE MELHOR TE DEFINE)</h2>
+        <div class="form-group">
+          <label>35. Você se considera mais:</label>
+          <label><input type="radio" name="disc35" value="A" required> (A) Direta e focada em resultados.</label>
+          <label><input type="radio" name="disc35" value="B"> (B) Comunicativa e influente.</label>
+          <label><input type="radio" name="disc35" value="C"> (C) Equilibrada e conciliadora.</label>
+          <label><input type="radio" name="disc35" value="D"> (D) Cautelosa e detalhista.</label>
+        </div>
+
+        <div class="form-group">
+          <label>36. Diante de um problema, você tende a:</label>
+          <label><input type="radio" name="disc36" value="A" required> (A) Resolver rapidamente, tomando decisões
+            diretas.</label>
+          <label><input type="radio" name="disc36" value="B"> (B) Buscar apoio da equipe e resolver de forma
+            colaborativa.</label>
+          <label><input type="radio" name="disc36" value="C"> (C) Refletir bastante antes de agir.</label>
+          <label><input type="radio" name="disc36" value="D"> (D) Seguir um protocolo estruturado antes de tomar
+            qualquer decisão.</label>
+        </div>
+
+        <div class="form-group">
+          <label>37. No ambiente de trabalho, você se destaca por:</label>
+          <label><input type="radio" name="disc37" value="A" required> (A) Liderança forte e tomada de decisões
+            rápidas.</label>
+          <label><input type="radio" name="disc37" value="B"> (B) Habilidade de comunicação e relacionamento
+            interpessoal.</label>
+          <label><input type="radio" name="disc37" value="C"> (C) Equilíbrio emocional e paciência.</label>
+          <label><input type="radio" name="disc37" value="D"> (D) Organização, planejamento e precisão nos
+            detalhes.</label>
+        </div>
+      </section>
+
+      <section>
+        <h2>VI. AUTOAVALIAÇÃO FINAL</h2>
+        <div class="form-group">
+          <label for="autoavaliacao38">38. O que você considera seu maior ponto forte como profissional?</label>
+          <textarea id="autoavaliacao38" name="autoavaliacao38" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="autoavaliacao39">39. Qual sua maior fraqueza e como está trabalhando para melhorá-la?</label>
+          <textarea id="autoavaliacao39" name="autoavaliacao39" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="autoavaliacao40">40. O que te faz sentir realizada profissionalmente?</label>
+          <textarea id="autoavaliacao40" name="autoavaliacao40" rows="4" required></textarea>
+        </div>
+      </section>
+
+      <section>
+        <h2>VII. FEEDBACK FINAL</h2>
+        <div class="form-group">
+          <label for="feedback41">41. Como você acredita que pode contribuir para o crescimento do Instituto Be
+            Healthy?</label>
+          <textarea id="feedback41" name="feedback41" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="feedback42">42. Quais são suas expectativas para essa função?</label>
+          <textarea id="feedback42" name="feedback42" rows="4" required></textarea>
+        </div>
+      </section>
+
+      <button type="submit">Enviar Questionário</button>
+    </form>
+  </div>
+</body>
+
+</html>
